@@ -1,0 +1,25 @@
+.cookies{
+    background-color: white!important;
+    padding: 50px 120px;
+    border-radius: 5px;
+}
+ 
+.cookies h1{
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.cookies p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.cookies button{
+    font-size: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: #4c8b29;
+    cursor: pointer;
+    margin-top: 20px;
+}

@@ -1,0 +1,30 @@
+.new-box{
+    width: 20%;
+    cursor: pointer;
+}
+.new-box img{
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+.new-box-name{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+.new-box-name h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.new-box-name h4{
+    color: var(--red);
+    font-size: 16px;
+    font-weight: 500;
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    .new-box-name h3{
+        font-size: 18px; 
+    }
+}

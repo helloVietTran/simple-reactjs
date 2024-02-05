@@ -1,0 +1,31 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.product .about-item_title{
+    font-size: 20px;
+    font-weight: 500;
+    width: max-content;
+    margin-top: 16px;
+}
+.align{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.product p{
+    text-align: center;
+    margin-top: 16px;
+}
+.about-icon{
+    margin-top: 12px;
+    font-size: 25px;
+    padding: 20px;
+    background-color: var(--circle-icon-color);
+    border-radius: 50%;
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

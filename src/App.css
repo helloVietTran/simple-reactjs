@@ -1,0 +1,240 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --red: #e94560;
+    --background-color: #f6f9fc;
+    --blue: #0f3460;
+    --circle-icon-color: #f3f5f9;
+}
+
+.background{
+    background-color: var(--background-color);
+    padding: 50px 0;
+}
+
+.container{
+    max-width: 90%;
+    margin: auto;  
+}
+
+.d_flex{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.c_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f_flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+.uppercase{
+    text-transform: uppercase;
+
+}
+.capitalize {
+    text-transform: capitalize;/*chu cai dau tien se la chu hoa*/
+}
+
+.RText{
+    text-align: center;
+}
+
+input, button {
+    outline: none;
+    border: none;
+}
+
+.row{
+    width: 50%;
+}
+
+.icon-cirle{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background-color: var(--circle-icon-color);
+    margin-left: 24px;
+    text-align: center;
+    border-radius: 50%;
+    color: #333;
+    padding: 12px; 
+}
+
+.box-shadow{
+    box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
+}
+
+
+.top{
+    margin-top: 80px;
+}
+
+.mtop{
+    margin-top: 40px;
+}
+.mt-1{
+    margin-top: 1px;
+}
+
+/*-------------------------product------------------------*/
+
+.product{
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: rgb(3 0 71 /25%) 0 1px 3px ;
+    margin: 10px;
+}
+.discount{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4px 8px;
+    background-color: var(--red);
+    font-size: 12px;
+    border-radius: 50px;
+    color: #fff;
+    margin: 10px;
+
+}
+.image img{
+    height: 200px;
+    width: 240px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.product h3{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.star-icon{
+    font-size: 15px;
+    color: #ffcd4e;
+    margin: 5px 5px 5px 0;
+}
+.product .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--red);
+}
+
+.decrease, .remove, .add{
+    color: var(--red);
+    font-size: 20px;
+    background: none;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(3 0 71 /15%);
+    border-radius: 5px;
+}
+.decrease:hover, .remove:hover, .add:hover{
+    color: #fff;
+    background-color: var(--red);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.product-like{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.product-like label{
+    background-color: var(--blue);
+    padding: 1px 10px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50px;
+}
+
+.product-like .heart-icon{
+    font-size: 20px;
+    margin: 10px 3px;
+}
+
+.product:hover .product-like{
+    opacity: 1;
+
+}
+
+.quantity span{
+    color:  #6c757d;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+.disable{
+    opacity: 0.5;
+    color: var(--red);
+    font-size: 20px;
+    background: none;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(3 0 71 /35%);
+    border-radius: 5px;
+}/*class này áp vào khi hết sản phẩm trong kho*/
+@media (min-width: 740px) and (max-width: 1023px){
+    .product h3{
+        font-size: 16px;
+    }
+    .star-icon{
+        font-size: 14px;       
+    }
+    .quantity span{
+        font-size: 14px;
+    }
+    .price h4{
+        font-size: 14px;
+    }
+    
+}
+
+/*-----------------------product--------------------*/
+.caret-icon{
+    color: gray;
+    margin: 0 12px; 
+ }
+
+/*___________________________Track_______________________________*/
+.track-background{
+    background-color: var(--background-color);
+}
+.track{
+    display: grid;
+    margin: 0 156px;
+    grid-template-columns: 35% 65%;
+}
+.track img{
+   width: 100%;
+   object-fit: cover;
+}
+/*___________________________Track_______________________________*/
+
+

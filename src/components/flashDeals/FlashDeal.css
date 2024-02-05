@@ -1,0 +1,44 @@
+#sold-out{
+    color:  #4f4f5a;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.heading .sale-icon{
+    color: var(--red);
+    margin: 10px;
+}
+.control-btn{
+    position: absolute;
+    top:50%;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    z-index: 19;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.next-btn, .prev-btn{
+    font-size: 16px;
+    color: white;
+}
+
+.control-btn-1{
+   right: -20px;
+}
+
+.control-btn-2{
+   left: -20px;
+}
+.control-btn:hover{
+    background-color: var(--red);
+    cursor: pointer;
+}
+@media (min-width: 740px) and (max-width: 1023px){
+
+}

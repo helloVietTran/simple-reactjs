@@ -1,0 +1,26 @@
+
+.product .saleImg{
+    height: 120px;
+    object-fit: cover;
+}
+.detail h3{
+    font-weight: 500;
+    font-size: 16px;
+}
+.detail span{
+    font-size: 12px;
+    color: var(--red);
+    font-weight: 500;
+}
+.padding-10{
+    padding: 10px;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .product .saleImg{
+        height: 100px;
+    }
+    .detail h3{
+        font-size: 14px;
+    }
+    
+}

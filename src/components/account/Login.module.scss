@@ -1,0 +1,133 @@
+.login-form{
+    max-width: 450px;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 30px;
+    background-color: white;
+    color: #212529;
+ 
+    h1{
+        text-align: center;
+        font-weight: 500;
+    }
+    input{
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        padding: 8px 12px;
+        color: #495057;
+        line-height: 1.5;
+    }
+    input:focus{
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+     }
+    
+     .userName span{
+        margin: 8px 0;
+        display: block;
+        font-size: 16px;
+    }
+    .password{
+        position: relative;
+        span{
+            margin: 12px 0 8px;
+            display: block; 
+        }
+    }
+    p{
+        text-align: center;
+        font-size: 14px;
+        margin: 16px 0 12px;
+        padding: 0 16px;
+        line-height: 1.5;
+        a{
+            color: #17a2b8;
+            font-size: 14px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    div.error-msg{
+        font-size: 12px;
+        color: var(--red);    
+    }
+    .hide-show-pass{
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        opacity: 0.8;
+        transform: translateY(25%);
+    }
+}
+
+
+.login-btn{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+    &:hover{
+        box-shadow: 0 0 0 0.2rem rgba(82,88,93,.5);
+    }
+}
+.login-with-social{
+   
+    img{
+        object-fit: cover;
+        height: 44px;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        left: 2px;     
+    }
+    .login__facebook-btn, .login__google-btn{
+        padding-left: 2px ;  
+        cursor: pointer;
+        background-color: rgb(66, 133, 244);
+        color: rgb(255, 255, 255);
+        height: 50px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .login__google-btn{
+        margin-top: 12px;
+    }
+    
+    .login__facebook-btn{
+        background-color:  #45619d;
+        margin-top: 12px;
+    }
+    
+}
+
+.fotgot-password a{
+    color: #17a2b8;
+    font-size: 14px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.make-account{
+    margin-top: 8px;
+    a{
+        color: #dc3545;
+        font-size: 15px;
+       
+    }
+}

@@ -1,0 +1,92 @@
+.register-form{
+    max-width: 450px;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 30px;
+    background-color: white;
+    color: #212529;
+    h1{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 8px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    label {
+        display: inline-block;
+        margin:16px 0 8px;
+    }
+    input{
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        padding: 8px 12px;
+        color: #495057;
+        line-height: 1.5;
+    }
+    input:focus{
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+     }
+     p{
+        text-align: center;
+        font-size: 14px;
+        margin: 16px 0 12px;
+        padding: 0 16px;
+        line-height: 1.5;
+        a{
+            color: #17a2b8;
+            font-size: 14px;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    span{
+        font-size: 12px;
+        color: var(--red);
+        display: inline;
+    }
+    .invalid{
+        border-color: #ec7931;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(246, 161, 125, 0.25);
+    }
+ 
+    
+   
+}
+.register-btn{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+    &:active{
+        box-shadow: 0 0 0 0.2rem rgba(82,88,93,.5);
+    }
+    &:hover{
+        opacity: 0.9;
+    }
+}
+.have-account{
+    margin-top: 8px;
+    a{
+        color: #dc3545;
+        font-size: 15px;
+       
+    }
+    span{
+        font-size: 16px;
+        display: inline;
+        color:#212529
+    }
+}
